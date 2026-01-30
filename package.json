@@ -1,0 +1,40 @@
+{
+  "name": "clip-forge",
+  "version": "1.0.0",
+  "description": "AI-powered video clip generator - better than Opus Clips",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "server:dev": "node --watch server/index.js",
+    "process": "node server/processor.js",
+    "process:watch": "node --watch server/processor.js",
+    "index": "node server/indexer.js"
+  },
+  "dependencies": {
+    "svelte": "^4.2.0",
+    "vite": "^5.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "express": "^4.18.2",
+    "multer": "^1.4.5",
+    "fluent-ffmpeg": "^2.1.2",
+    "openai": "^4.26.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.1",
+    "sqlite3": "^5.1.6",
+    "qdrant-js-client": "^1.7.0",
+    "socket.io": "^4.7.0",
+    "pino": "^8.17.0",
+    "dotenv": "^16.3.1",
+    "youtube-dl-exec": "^2.4.0",
+    "exifjs": "^2.3.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
+  }
+}
